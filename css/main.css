@@ -9,6 +9,8 @@
 body {
     background-color: black;
     padding: 0 0 0 0%;
+    display: flex;
+    flex-direction: column;
 }
 .top {
     background-image: url('../img/audioboard.jpeg');
@@ -131,10 +133,14 @@ nav {
     font-size: 32px;
     font-weight: 200;
     padding: 0 0 10px 0;
+    background-color: rgba(40, 40, 40, .5);
+    border-radius: 5px;
 }
 .study-online p {
     line-height: 23px;
     padding-bottom: 20px;
+    background-color: rgba(40, 40, 40, .5);
+    border-radius: 5px;
 }
 .study-online button {
     color: white;
@@ -164,21 +170,17 @@ nav {
     background-color: #e71a22;
     padding: 2px 5px;
     border: solid;
-    border-color: black;
+    border-color: rgba(70, 70, 70, .95);
     border-width: 1px 1px 1px 1px;
-    outline: solid;
-    outline-color: #bec3cc;
-    outline-width: 2px;
+    margin-right: 2px;
 }
 .black {
     background-color: #333333;
     padding: 2px 5px;
     border: solid;
-    border-color: black;
-    border-width: 1px 1px 1px 1px;
-    outline: solid;
-    outline-color: #bec3cc;
-    outline-width: 2px;
+    border-color: rgba(70, 70, 70, .95);
+    border-width: 2px 2px 2px 2px;
+    margin-right: 2px;
 }
 /* three-box */
 .three-box {
@@ -312,7 +314,6 @@ footer {
     background-color: #403d3e;
     color: white;
     margin-top: 130px;
-    width: 100%;
 }
 .bottom {
     display: flex;
@@ -328,7 +329,7 @@ h5 {
     border-color: rgba(200, 200, 200, .5);
     margin-bottom: 3px;
 }
-.hidden {
+.h5-hidden {
     display: none;
 }
 .happening {
@@ -389,7 +390,7 @@ h5 {
 }
 .updates {
     background-color: rgba(20, 20, 20, .5);
-    width: 100%;
+    width: auto;
     color: #b8c1c2;
     height: 90px;
     display: flex;
@@ -523,7 +524,129 @@ h5 {
         display: none;
     }
 }
-/* @media (max-width: 775px) {
+@media (max-width: 775px) {
+    footer {
+        margin-top: 300px;
+    }
+    .study-online {
+        margin-top: 100px;
+    }
+    .cycle-box {
+        position: static;
+        top: 0;
+        margin-top: 100px;
+    }
     .three-box {
         flex-direction: column;
-} */
+        width: auto;
+        position: static;
+        top: 0;
+        margin: 0;
+    }
+    .get-started {
+        width: auto;
+    }
+    .events {
+        width: auto;
+        background-color: rgb(240, 240, 240);
+    }
+    .news {
+        width: auto;
+        background-color: rgba(215, 215, 215);
+    }
+    .events-head {
+        flex-direction: row;
+    }
+    .news-head {
+        flex-direction: row;
+    }
+    .bottom {
+        flex-direction: column;
+    }
+    .happening {
+        width: auto;
+    }
+    .beat {
+        width: auto;
+    }
+    .learn {
+        width: auto;
+    }
+    .other {
+        width: auto;
+    }
+    .socials {
+        margin: 80px 0 5px 124px;
+        width: auto;
+        float: left;
+    }
+    .cycle {
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 640px) {
+    .berklee-banner {
+        width: 110px;
+        left: 3%;
+    }
+}
+@media (max-width: 600px) {
+    .study-online {
+        width: 400px;
+    }
+}
+@media (max-width: 553px) {
+    footer {
+        margin-top: 406px;
+    }
+}
+@media (max-width: 540px) {
+    .search {
+        display: none;
+    }
+}
+
+@media (max-width: 475px) {
+    .copy-box ul li {
+        font-size: 11px;
+    }
+    .copy-box ul {
+        width: 95%;
+    }
+    .copy-box {
+        margin-left: 10px;
+    }
+    .berklee-banner {
+        display: none;
+    }
+    .nav-top {
+        padding: 8px 2% 8px 2%;
+    }
+    .study-online {
+        width: 330px;
+    }
+}
+@media (max-width: 404px) {
+    .socials {
+        width: 36%;
+        right: 60px;
+    }
+    .study-online {
+        position: relative;
+        right: 35px;
+    }
+}
+@media (max-width: 362px) {
+    .socials {
+        width: 40%;
+    }
+    .study-online {
+        right: 50px;
+    }
+}
+@media (max-width: 326px) {
+    .socials {
+        width: 50%;
+    }
+}
