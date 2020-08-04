@@ -1,7 +1,7 @@
 # BerkleeClone
 
 This is a project that I did to help solidify my front-end skills.
-I started this project with only a screenshot of an old version of the Berklee College of Music's website that I found online.
+I started this project with only a screenshot of an old version of the Berklee College of Music's website that I found online (this image is included in the img folder).
 I psuedo-coded the different elements, and began creating a shell of the project with HTML and then used CSS to try to replicate every detail as closely as I possibly could.
 I could not find the exact image used in the background, so I found something as close to it as I could and did something similar with fonts.
 Overall, I was very happy with how closely I was able to get to the original look.
